@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+   --pink-main: #F6609E; /* Updated pink color */
+}
+
+.font-leaguespartan {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(246, 96, 158, 0.6);
+}
+
+.transition-scaleGlow {
+  transition: all 0.3s ease;
+}
+
+.group:hover .hover-shift-pink {
+  color: var(--pink-main);
+  transform: translateX(5px);
+  transition: all 0.1s ease;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 4s ease infinite;
+}
