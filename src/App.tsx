@@ -2,6 +2,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa6';
 import ScrollProgressBar from './Components/ScrollProgressBar';
 import { Typewriter } from 'react-simple-typewriter';
 
+
 function App() {
   return (
     <div className="bg-white text-gray-900">
