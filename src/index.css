@@ -6,7 +6,8 @@ html {
 }
 
 :root {
-   --pink-main: #F6609E; /* Updated pink color */
+   --blue-main: #3C79AF;
+   --blue-glow: rgba(51, 153, 255, 0.6);
 }
 
 .font-leaguespartan {
@@ -14,15 +15,15 @@ html {
 }
 
 .shadow-glow {
-  box-shadow: 0 0 15px rgba(246, 96, 158, 0.6);
+  box-shadow: 0 0 15px var(--blue-glow);
 }
 
 .transition-scaleGlow {
   transition: all 0.3s ease;
 }
 
-.group:hover .hover-shift-pink {
-  color: var(--pink-main);
+.group:hover .hover-shift-blue {
+  color: var(--blue-main);
   transform: translateX(5px);
   transition: all 0.1s ease;
 }
@@ -34,5 +35,14 @@ html {
 }
 .animate-gradient {
   background-size: 200% 200%;
-  animation: gradient 4s ease infinite;
+  animation: gradient 7s ease infinite;
+}
+
+.text-glow {
+  transition: all 0.2s ease;
+}
+
+.group:hover .text-glow {
+  color: var(--blue-main);
+  text-shadow: 0 0 8px var(--blue-main), 0 0 15px var(--blue-glow);
 }

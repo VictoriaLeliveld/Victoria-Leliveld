@@ -10,25 +10,25 @@ function App() {
       <ScrollProgressBar />
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 w-full bg-white text-pink-500 flex justify-between p-4 shadow z-10">
+      <nav className="fixed top-0 w-full bg-white text-[var(--blue-main)] flex justify-between p-4 shadow z-10">
         <a href="#home" className="font-bold text-2xl leading-none">
           Victoria Leliveld
         </a>
         <div className="space-x-6 mr-8">
-          <a href="#home" className="hover:text-[var(--pink-main)] font-bold">Home</a>
-          <a href="#projects" className="hover:text-[var(--pink-main)] font-bold">Projects</a>
-          <a href="#about" className="hover:text-[var(--pink-main)] font-bold">About</a>
+          <a href="#home" className="hover:text-[var(--blue-main)] font-bold">Home</a>
+          <a href="#projects" className="hover:text-[var(--blue-main)] font-bold">Projects</a>
+          <a href="#about" className="hover:text-[var(--blue-main)] font-bold">About</a>
         </div>
       </nav>
 
       {/* Sections */}
-      <section id="home" className="h-screen flex flex-col items-center justify-center bg-[radial-gradient(ellipse_150%_100%,white_35%,theme('colors.pink.300'))] relative">
+      <section id="home" className="h-screen flex flex-col items-center justify-center bg-[radial-gradient(ellipse_150%_100%,white_35%,theme('colors.blue.300'))] relative">
       <p className="mb-12"></p>
-        <h1 className="font-bold text-7xl mb-7 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-pink-550 to-pink-700 animate-gradient">
+        <h1 className="font-bold text-7xl mb-7 text-transparent bg-clip-text bg-gradient-to-r from-[#66B2FF] via-[#3C79AF] to-[#1A4D8F] animate-gradient">
             Hi, I'm Victoria Leliveld
          </h1>
         <p className="text-2xl mb-6">
-          I'm a <span className="font-bold text-pink-500">
+          I'm a <span className="font-bold text-[var(--blue-main)]">
             <Typewriter
             words={['Computer Science Student', 'Psychology Student', 'UX Student', 'Problem Solver', 'Creative Thinker', 'Collaborator']}
             loop={true}
@@ -41,34 +41,34 @@ function App() {
         </span>
         </p>
         <div className="flex space-x-6 mb-6 mt-3">
-          <a href="https://www.linkedin.com/in/victorialeliveld/" target="_blank" rel="noopener noreferrer" className="text-[var(--pink-main)] text-6xl hover:text-pink-400">
+          <a href="https://www.linkedin.com/in/victorialeliveld/" target="_blank" rel="noopener noreferrer" className="text-[var(--blue-main)] text-6xl hover:text-[#6CA0DC]">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/VictoriaLeliveld" target="_blank" rel="noopener noreferrer" className="text-[var(--pink-main)] text-6xl hover:text-pink-400">
+          <a href="https://github.com/VictoriaLeliveld" target="_blank" rel="noopener noreferrer" className="text-[var(--blue-main)] text-6xl hover:text-[#6CA0DC]">
             <FaGithub />
           </a>
         </div>
          <div className="flex space-x-6 ">
           <a
             href="#projects"
-            className="border border-[var(--pink-main)] bg-[var(--pink-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
+            className="border border-[var(--blue-main)] bg-[var(--blue-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
           >
             View Projects
           </a>
           <a
             href="#about"
-            className="border border-[var(--pink-main)] bg-[var(--pink-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
+            className="border border-[var(--blue-main)] bg-[var(--blue-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
           >
             About Me
           </a>
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-[rgba(255,255,255,0)] to-pink-50"></div>
+        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-[rgba(255,255,255,0)] to-blue-50"></div>
       </section>
 
 
-      <section id="projects" className="py-20 px-6 bg-pink-50 relative">
+      <section id="projects" className="py-20 px-6 bg-blue-50 relative">
         <h2
-          className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-pink-500 via-pink-600 to-pink-700 animate-gradient mb-12"
+          className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#66B2FF] via-[#3C79AF] to-[#1A4D8F] animate-gradient mb-12"
           style={{ paddingBottom: '4px', lineHeight: '1.1' }}
         >
           Projects
@@ -121,7 +121,7 @@ function App() {
     ].map((project, idx) => (
       <div
         key={idx}
-        className="group bg-white rounded-2xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#F6609E]"
+        className="group bg-white rounded-2xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#3C79AF]"
       >
         <div className="overflow-hidden">
           <img
@@ -131,7 +131,7 @@ function App() {
           />
         </div>
         <div className="p-6">
-          <h3 className="text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#F6609E]">
+          <h3 className="text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#3C79AF]">
             {project.title}
           </h3>
           <p className="text-gray-700 mt-2">{project.description}</p>
@@ -139,7 +139,7 @@ function App() {
             {project.skills.map((skill) => (
               <span
                 key={skill}
-                className="bg-pink-200 text-pinkMain text-sm px-3 py-1 rounded-full font-medium transition-colors duration-300 hover:bg-[#F6609E] hover:text-white"
+                className="bg-blue-100 text-black text-sm px-3 py-1 rounded-full font-medium transition-colors duration-300 hover:bg-[#3C79AF] hover:text-white"
               >
                 {skill}
               </span>
@@ -149,7 +149,7 @@ function App() {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 px-4 py-2 bg-[#F6609E] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
+            className="inline-block mt-4 px-4 py-2 bg-[#3C79AF] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
           >
             View Project
           </a> 
@@ -158,7 +158,7 @@ function App() {
               href="https://github.com/VictoriaLeliveld/MoodNail/releases/download/v1.0.0/moodnail.exe"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 ml-4 px-4 py-2 bg-[#F6609E] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
+              className="inline-block mt-4 ml-4 px-4 py-2 bg-[#3C79AF] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
             >
               Download App
             </a>
@@ -167,26 +167,26 @@ function App() {
       </div>
     ))}
   </div>
-  <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-[rgba(255,241,242,0)] to-pink-100"></div>
+  <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-[rgba(255,241,242,0)] to-blue-100"></div>
 </section>
 
 
      {/* About Section */}
 <section
   id="about"
-  className="min-h-screen flex flex-col items-center justify-center bg-pink-100 py-12 space-y-12"
+  className="min-h-screen flex flex-col items-center justify-center bg-blue-100 py-12 space-y-12"
 >
   <h2
-          className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 animate-gradient mb-12"
+          className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#4BA0F2] via-[#3C79AF] to-[#1A4D8F] animate-gradient mb-12"
           style={{ paddingBottom: '4px', lineHeight: '1.1' }}
         >
           About Me
         </h2>
 
   {/* Skills */}
-  <div className="group rounded-2xl bg-white shadow-lg transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#F6609E] w-full max-w-3xl mx-auto">
+  <div className="group rounded-2xl bg-white shadow-lg transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#3C79AF] w-full max-w-3xl mx-auto">
     <div className="p-6">
-      <h2 className="text-2xl font-bold text-pinkMain mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-pink">🛠 Skills</h2>
+      <h2 className="text-2xl font-bold text-black mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-blue">🛠 Skills</h2>
       <div className="flex flex-wrap gap-3">
         {[
           'C', 'Java', 'JavaScript', 'HTML', 'LaTeX', 'Python', 'MATLAB',
@@ -195,7 +195,7 @@ function App() {
         ].map((skill) => (
           <span
             key={skill}
-            className="bg-pink-200 text-pinkMain font-medium px-3 py-1 rounded-full shadow transition-transform transform hover:scale-110 hover:bg-[#F6609E] hover:text-white"
+            className="bg-blue-100 text-black font-medium px-3 py-1 rounded-full shadow transition-transform transform hover:scale-110 hover:bg-[#3C79AF] hover:text-white"
           >
             {skill}
           </span>
@@ -206,8 +206,8 @@ function App() {
 
     <div className="flex flex-col lg:flex-row gap-6 justify-center w-full max-w-3xl mx-auto">
     {/* Education */}
-    <div className="group flex-[2.2] rounded-2xl p-6 bg-white shadow-lg transition-transform transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#F6609E]">
-      <h2 className="text-2xl font-bold text-pinkMain mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-pink">🎓 Education</h2>
+    <div className="group flex-[2.2] rounded-2xl p-6 bg-white shadow-lg transition-transform transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#3C79AF]">
+      <h2 className="text-2xl font-bold text-black mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-blue">🎓 Education</h2>
       <p className="font-semibold text-lg">
         Honours BSc Computer Science and Psychology
       </p>
@@ -216,13 +216,13 @@ function App() {
         <li>Concentration in Computation and Cognitive Neuroscience</li>
       </ul>
       <p className="mt-2">Wilfrid Laurier University • 2023–2027</p>
-      <p className="mt-2 text-pinkMain font-medium">Relevant Coursework:</p>
+      <p className="mt-2 text-black font-medium">Relevant Coursework:</p>
       <p>Data Structures, Object-Oriented Programming, Intro to Microprocessors, UX Research.</p>
     </div>
 
     {/* Contact */}
-    <div className="group flex-[1.5] rounded-2xl p-6 bg-white shadow-lg relative transition-transform transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#F6609E]">
-      <h2 className="text-2xl font-bold text-pinkMain mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-pink">📬 Contact Me</h2>
+    <div className="group flex-[1.5] rounded-2xl p-6 bg-white shadow-lg relative transition-transform transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#3C79AF]">
+      <h2 className="text-2xl font-bold text-black mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-blue">📬 Contact Me</h2>
       <p className="text-ml">I'd love to connect with you! Feel free to reach out via email or phone, or check out my resume below.</p>
       <p className="mb-4"></p>
       <p className="mt-2"><strong>Email:</strong> victorialeliveld@gmail.com</p>
@@ -234,9 +234,9 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
         className="text-white text-xl px-2 py-2 rounded flex items-center justify-center transition-transform duration-200 transform hover:scale-110 mt-4 self-start"
-        style={{ backgroundColor: 'var(--pink-main)', minWidth: '100px' }}
-        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F6609E')}
-        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--pink-main)')}
+        style={{ backgroundColor: 'var(--blue-main)', minWidth: '100px' }}
+        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--blue-main)')}
+        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--blue-main)')}
       >
         Resume
       </a>

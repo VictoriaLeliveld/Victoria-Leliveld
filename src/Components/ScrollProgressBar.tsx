@@ -16,10 +16,13 @@ const ScrollProgressBar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-1 bg-gray-300 z-50">
-      <div className="h-1 bg-pink-500" style={{ width: `${scroll}%` }} />
-    </div>
-  );
+  <div className="fixed top-0 left-0 w-full h-1 bg-gray-300 z-50">
+    <div 
+      className="h-1" 
+      style={{ width: `${scroll}%`, backgroundColor: 'var(--blue-main)' }} 
+    />
+  </div>
+);
 };
 
 export default ScrollProgressBar;
