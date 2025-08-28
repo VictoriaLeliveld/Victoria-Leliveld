@@ -230,7 +230,7 @@ function App() {
       <p><strong>Phone:</strong> (519) 249-1179</p>
       <p className="mb-7"></p>
       <a
-        href="/VictoriaLeliveldResume.pdf"
+        href="/VictoriaLeliveldsResume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white text-xl px-2 py-2 rounded flex items-center justify-center transition-transform duration-200 transform hover:scale-110 mt-4 self-start"
