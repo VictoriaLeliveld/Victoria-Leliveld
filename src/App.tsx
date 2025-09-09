@@ -77,7 +77,7 @@ function App() {
     {/* Project Card */}
     {[
       {
-        title: "SetList",
+        title: "SetList – UX Hackathon Prize Winner",
         description: "SetList is a concert companion app designed during a 36-hour UX hackathon, where fans can vote live on the songs they want to hear, creating a more engaging and audience-centered concert experience. Developed using UX principles, the project won the Most Innovative Design award for reimagining audience-artist connections.",
         image: "/SetList.png",
         skills: ["Figma", "Canva", "UX Principles"],
@@ -91,18 +91,18 @@ function App() {
         link: "https://docs.google.com/document/d/1EpSp6lYnRvwA2G_2Mfg_jZfXOudSmiaiqK0N2N4NgvI/edit?usp=sharing",
       },
       {
-        title: "MoodNail (ElectronJS App)",
-        description: "MoodNail is a desktop app built with HTML, CSS, and JavaScript, powered by ElectronJS. This project enhanced my skills in JavaScript event handling, responsive UI design, and desktop app development. Download and run the app to experience personalized nail color recommendations based on mood, weather, and event.",
-        image: "/moodnailapp.png",
-        skills: ["ElectronJS", "JavaScript", "HTML", "Event Handling"],
-        link: "https://github.com/VictoriaLeliveld/MoodNail",
+        title: "Raspberry Pi Music Player",
+        description: "Pi Music Player is a web app built with Python (Flask), HTML, CSS, and JavaScript, designed to run on a Raspberry Pi 3. This project allowed me to explore the Raspberry Pi environment while creating an interactive and engaging music player that supports playing, pausing, and skipping songs.",
+        image: "/RPiMusicPlay.png",
+        skills: ["Raspberry Pi", "CSS", "Web App Development"],
+        link: "https://github.com/VictoriaLeliveld/pi-music-player",
       },
       {
-        title: "UX Team Design Sprint",
-        description: "This project is a comprehensive term project practicing design thinking principles. It was done in a focused team of UX Design students with diverse perspectives and skill sets to develop an innovative solution to a complex challenge. Explore our project to witness the power of design thinking in action.",
-        image: "/UXclubs.png",
-        skills: ["Prototyping", "User Research", "Interaction Design"],
-        link: "https://docs.google.com/document/d/1LAVLCpv9U_XeAGFyHe-pHTH27RWfuEpT7G9t4SerjgI/edit?usp=sharing",
+        title: "Applying UX Research Methods: Spotify",
+        description: "This term-long UX research project focused on analyzing and improving Spotify. A collaborative team of UX students applied methods including heuristic evaluations, SWOT and competitive analyses, user interviews, affinity and empathy mapping, personas, journey mapping, and usability testing.",
+        image: "/SpotifyPic.png",
+        skills: ["User Interviews", "Usability Testing", "Heuristic Evaluation"],
+        link: "https://docs.google.com/presentation/d/1HNKf_MuVQNnDcQTdPBoutBTrcdF6Orsy1l6ThWCMtpA/edit?usp=sharing",
       },
       {
         title: "Cat Rescue Digital Platform",
@@ -117,6 +117,20 @@ function App() {
         image: "/arduinozoom.png",
         skills: ["Arduino Programming", "Circuit Design", "Breadboarding"],
         link: "https://docs.google.com/document/d/14xFGJrr96g6FuempmKUmvuhyX0bk_qcBbHyBH-vvz5U/edit?usp=sharing",
+      },
+      {
+        title: "MoodNail – ElectronJS App",
+        description: "MoodNail is a desktop app built with HTML, CSS, and JavaScript, powered by ElectronJS. This project enhanced my skills in JavaScript event handling, responsive UI design, and desktop app development. Download and run the app to experience personalized nail color recommendations based on mood, weather, and event.",
+        image: "/moodnailapp.png",
+        skills: ["ElectronJS", "JavaScript", "HTML", "Event Handling"],
+        link: "https://github.com/VictoriaLeliveld/MoodNail",
+      },
+      {
+        title: "UX Team Design Sprint",
+        description: "This project is a comprehensive term project practicing design thinking principles. It was done in a focused team of UX Design students with diverse perspectives and skill sets to develop an innovative solution to a complex challenge. Explore our project to witness the power of design thinking in action.",
+        image: "/UXclubs.png",
+        skills: ["Prototyping", "User Research", "Interaction Design"],
+        link: "https://docs.google.com/document/d/1LAVLCpv9U_XeAGFyHe-pHTH27RWfuEpT7G9t4SerjgI/edit?usp=sharing",
       }
     ].map((project, idx) => (
       <div
@@ -191,7 +205,7 @@ function App() {
         {[
           'C', 'Java', 'JavaScript', 'HTML', 'LaTeX', 'Python', 'MATLAB',
           'ARM Assembly', 'CSS', 'TypeScript', 'ElectronJS', 'React', 'Tailwind', 'Vite',
-          'GitHub', 'Electron', 'Figma', 'Canva', 'VS Code', 'Prototyping', 'UX Principles'
+          'GitHub', 'Electron', 'Figma', 'Canva', 'VS Code', 'Prototyping', 'UX Principles', 'Raspberry Pi'
         ].map((skill) => (
           <span
             key={skill}
