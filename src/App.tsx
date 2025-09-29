@@ -3,13 +3,12 @@ import ScrollProgressBar from './Components/ScrollProgressBar';
 import { Typewriter } from 'react-simple-typewriter';
 
 
+
 function App() {
   return (
     <div className="bg-white text-gray-900">
-      {/* Scroll Progress Bar */}
       <ScrollProgressBar />
 
-      {/* Navigation Bar */}
       <nav className="fixed top-0 w-full bg-white text-[var(--blue-main)] flex justify-between p-4 shadow z-10">
         <a href="#home" className="font-bold text-2xl leading-none">
           Victoria Leliveld
@@ -21,47 +20,73 @@ function App() {
         </div>
       </nav>
 
-      {/* Sections */}
-      <section id="home" className="h-screen flex flex-col items-center justify-center bg-[radial-gradient(ellipse_150%_100%,white_35%,theme('colors.blue.300'))] relative">
-      <p className="mb-12"></p>
-        <h1 className="font-bold text-7xl mb-7 text-transparent bg-clip-text bg-gradient-to-r from-[#66B2FF] via-[#3C79AF] to-[#1A4D8F] animate-gradient">
+      <section
+        id="home"
+        className="h-screen flex flex-col md:flex-row items-center justify-center bg-[radial-gradient(ellipse_150%_100%,white_35%,theme('colors.blue.300'))] relative px-6 md:px-20"
+      >
+        <div className="md:w-2/3 flex flex-col items-center justify-center mb-10 md:mb-0 text-center">
+          <h1 className="font-bold text-7xl mb-7 text-transparent bg-clip-text bg-gradient-to-r from-[#66B2FF] via-[#3C79AF] to-[#1A4D8F] animate-gradient">
             Hi, I'm Victoria Leliveld
-         </h1>
-        <p className="text-2xl mb-6">
-          I'm a <span className="font-bold text-[var(--blue-main)]">
-            <Typewriter
-            words={['Computer Science Student', 'Psychology Student', 'UX Student', 'Problem Solver', 'Creative Thinker', 'Collaborator']}
-            loop={true}
-            cursor
-            cursorStyle="|"
-            typeSpeed={100}
-            deleteSpeed={50}
-            delaySpeed={1000}
+          </h1>
+
+          <p className="text-2xl mb-6 text-center md:text-left">
+            I'm a <span className="font-bold text-[var(--blue-main)]">
+              <Typewriter
+                words={[
+                  'Computer Science Student',
+                  'Psychology Student',
+                  'UX Student',
+                  'Problem Solver',
+                  'Creative Thinker',
+                  'Collaborator'
+                ]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={100}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
+          </p>
+
+          <div className="flex space-x-6 mb-6 mt-3 justify-center md:justify-start">
+            <a href="https://www.linkedin.com/in/victorialeliveld/" target="_blank" rel="noopener noreferrer" className="text-[var(--blue-main)] text-6xl hover:text-[#6CA0DC]">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/VictoriaLeliveld" target="_blank" rel="noopener noreferrer" className="text-[var(--blue-main)] text-6xl hover:text-[#6CA0DC]">
+              <FaGithub />
+            </a>
+          </div>
+
+          <div className="flex space-x-6 justify-center md:justify-start">
+            <a
+              href="#projects"
+              className="border border-[var(--blue-main)] bg-[var(--blue-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
+            >
+              View Projects
+            </a>
+            <a
+              href="#about"
+              className="border border-[var(--blue-main)] bg-[var(--blue-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
+            >
+              About Me
+            </a>
+          </div>
+        </div>
+
+        {/* Right side: image */}
+        <div className="md:w-1/3 flex justify-center md:justify-end items-center">
+        <div className="relative group">
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#1A4D8F] via-[#3C79AF] to-[#66B2FF] opacity-75 group-hover:opacity-100 blur-md transition duration-500"></div>
+          <img
+            src="/Victoria.jpeg"
+            alt="Victoria Leliveld"
+            className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover transition-transform duration-300 transform group-hover:scale-105 shadow-xl"
           />
-        </span>
-        </p>
-        <div className="flex space-x-6 mb-6 mt-3">
-          <a href="https://www.linkedin.com/in/victorialeliveld/" target="_blank" rel="noopener noreferrer" className="text-[var(--blue-main)] text-6xl hover:text-[#6CA0DC]">
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/VictoriaLeliveld" target="_blank" rel="noopener noreferrer" className="text-[var(--blue-main)] text-6xl hover:text-[#6CA0DC]">
-            <FaGithub />
-          </a>
         </div>
-         <div className="flex space-x-6 ">
-          <a
-            href="#projects"
-            className="border border-[var(--blue-main)] bg-[var(--blue-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
-          >
-            View Projects
-          </a>
-          <a
-            href="#about"
-            className="border border-[var(--blue-main)] bg-[var(--blue-main)] text-white px-6 py-3 rounded text-xl transition-transform duration-200 transform hover:scale-105"
-          >
-            About Me
-          </a>
-        </div>
+      </div>
+
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-[rgba(255,255,255,0)] to-blue-50"></div>
       </section>
 
@@ -185,7 +210,6 @@ function App() {
 </section>
 
 
-     {/* About Section */}
 <section
   id="about"
   className="min-h-screen flex flex-col items-center justify-center bg-blue-100 py-12 space-y-12"
@@ -197,15 +221,14 @@ function App() {
           About Me
         </h2>
 
-  {/* Skills */}
   <div className="group rounded-2xl bg-white shadow-lg transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#3C79AF] w-full max-w-3xl mx-auto">
     <div className="p-6">
       <h2 className="text-2xl font-bold text-black mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-blue">🛠 Skills</h2>
       <div className="flex flex-wrap gap-3">
         {[
           'C', 'Java', 'JavaScript', 'HTML', 'LaTeX', 'Python', 'MATLAB',
-          'ARM Assembly', 'CSS', 'TypeScript', 'ElectronJS', 'React', 'Tailwind', 'Vite',
-          'GitHub', 'Electron', 'Figma', 'Canva', 'VS Code', 'Prototyping', 'UX Principles', 'Raspberry Pi'
+          'ARM Assembly', 'CSS', 'TypeScript', 'ElectronJS', 'React', 'SQL', 'Vite',
+          'GitHub', 'Electron', 'Figma', 'Canva', 'VS Code', 'Prototyping', 'UX Principles', 'Raspberry Pi', 'R'
         ].map((skill) => (
           <span
             key={skill}
