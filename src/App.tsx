@@ -25,7 +25,7 @@ function App() {
         className="h-screen flex flex-col md:flex-row items-center justify-center bg-[radial-gradient(ellipse_150%_100%,white_35%,theme('colors.blue.300'))] relative px-6 md:px-20"
       >
         <div className="md:w-2/3 flex flex-col items-center justify-center mb-10 md:mb-0 text-center">
-          <h1 className="font-bold text-7xl mb-7 text-transparent bg-clip-text bg-gradient-to-r from-[#66B2FF] via-[#3C79AF] to-[#1A4D8F] animate-gradient">
+          <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-7 text-transparent bg-clip-text bg-gradient-to-r from-[#66B2FF] via-[#3C79AF] to-[#1A4D8F] animate-gradient">
             Hi, I'm Victoria Leliveld
           </h1>
 
