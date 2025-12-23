@@ -74,8 +74,6 @@ function App() {
             </a>
           </div>
         </div>
-
-        {/* Right side: image */}
         <div className="md:w-1/3 flex justify-center md:justify-end items-center">
         <div className="relative group">
           <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#1A4D8F] via-[#3C79AF] to-[#66B2FF] opacity-75 group-hover:opacity-100 blur-md transition duration-500"></div>
@@ -99,7 +97,7 @@ function App() {
           Projects
         </h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-    {/* Project Card */}
+    {/* Project Cards */}
     {[
       {
         title: "SetList – UX Hackathon Prize Winner",
@@ -109,11 +107,26 @@ function App() {
         link: "https://drive.google.com/file/d/1gKn4xc7LDvko32pnJYT59RTfM8W6ZSBn/view?usp=sharing",
       },
       {
-        title: "Provinces and Territories Confederation Circuit",
-        description: "Provinces and Territories Confederation Circuit is a logic design project that determines the entry order of Canadian provinces and territories into Confederation. It uses binary input and output mappings, simplified using Karnaugh maps and truth tables, and was built and simulated in CircuitVerse for accuracy.",
-        image: "/circuit.png",
-        skills: ["Logic Design", "Circuit Simulation", "Karnaugh Maps"],
-        link: "https://docs.google.com/document/d/1EpSp6lYnRvwA2G_2Mfg_jZfXOudSmiaiqK0N2N4NgvI/edit?usp=sharing",
+        title: "TextSense – AI Accessibility Analysis Tool",
+        description: "TextSense is a full-stack web application that helps web developers improve web content readability and accessibility. Powered by Google’s Gemini 2.5 Flash AI, it delivers real-time, actionable improvement suggestions through a clean React frontend and a Node.js/Express backend.",
+        image: "/TextSensePic.png",
+        skills: ["React.js", "JavaScript", "Node.js", "Express.js"],
+        githubLink: "https://github.com/VictoriaLeliveld/textsense-client",
+        liveLink: "https://victorialeliveld.github.io/textsense-client/",
+      },
+      {
+        title: "Applying UX Research Methods: CNN",
+        description: "This term-long UX research project focused on analyzing the CNN website. A collaborative team of UX students applied methods including card sorting, tree testing, wireframing, and usability testing to identify pain points and suggest actionable recommendations for improving user experience.",
+        image: "/CNNPic.png",
+        skills: ["Card Sorting", "Tree Testing", "Wireframing"],
+        link: "https://drive.google.com/file/d/1BzX_enoJclaF1Sz4v5zH9ILumW9SWVeZ/view?usp=sharing",
+      },
+      {
+        title: "Applying UX Research Methods: Spotify",
+        description: "This term-long UX research project focused on analyzing and improving Spotify. A collaborative team of UX students applied methods including heuristic evaluations, SWOT and competitive analyses, user interviews, affinity and empathy mapping, personas, journey mapping, and usability testing.",
+        image: "/SpotifyPic.png",
+        skills: ["User Interviews", "Usability Testing", "Heuristic Evaluation"],
+        link: "https://docs.google.com/presentation/d/1HNKf_MuVQNnDcQTdPBoutBTrcdF6Orsy1l6ThWCMtpA/edit?usp=sharing",
       },
       {
         title: "Raspberry Pi Music Player",
@@ -123,11 +136,18 @@ function App() {
         link: "https://github.com/VictoriaLeliveld/pi-music-player",
       },
       {
-        title: "Applying UX Research Methods: Spotify",
-        description: "This term-long UX research project focused on analyzing and improving Spotify. A collaborative team of UX students applied methods including heuristic evaluations, SWOT and competitive analyses, user interviews, affinity and empathy mapping, personas, journey mapping, and usability testing.",
-        image: "/SpotifyPic.png",
-        skills: ["User Interviews", "Usability Testing", "Heuristic Evaluation"],
-        link: "https://docs.google.com/presentation/d/1HNKf_MuVQNnDcQTdPBoutBTrcdF6Orsy1l6ThWCMtpA/edit?usp=sharing",
+        title: "MoodNail – ElectronJS App",
+        description: "MoodNail is a desktop app built with HTML, CSS, and JavaScript, powered by ElectronJS. This project enhanced my skills in JavaScript event handling, responsive UI design, and desktop app development. Download and run the app to experience personalized nail color recommendations based on mood, weather, and event.",
+        image: "/moodnailapp.png",
+        skills: ["ElectronJS", "JavaScript", "HTML", "Event Handling"],
+        link: "https://github.com/VictoriaLeliveld/MoodNail",
+      },
+      {
+        title: "Provinces and Territories Confederation Circuit",
+        description: "Provinces and Territories Confederation Circuit is a logic design project that determines the entry order of Canadian provinces and territories into Confederation. It uses binary input and output mappings, simplified using Karnaugh maps and truth tables, and was built and simulated in CircuitVerse for accuracy.",
+        image: "/circuit.png",
+        skills: ["Logic Design", "Circuit Simulation", "Karnaugh Maps"],
+        link: "https://docs.google.com/document/d/1EpSp6lYnRvwA2G_2Mfg_jZfXOudSmiaiqK0N2N4NgvI/edit?usp=sharing",
       },
       {
         title: "Cat Rescue Digital Platform",
@@ -142,13 +162,6 @@ function App() {
         image: "/arduinozoom.png",
         skills: ["Arduino Programming", "Circuit Design", "Breadboarding"],
         link: "https://docs.google.com/document/d/14xFGJrr96g6FuempmKUmvuhyX0bk_qcBbHyBH-vvz5U/edit?usp=sharing",
-      },
-      {
-        title: "MoodNail – ElectronJS App",
-        description: "MoodNail is a desktop app built with HTML, CSS, and JavaScript, powered by ElectronJS. This project enhanced my skills in JavaScript event handling, responsive UI design, and desktop app development. Download and run the app to experience personalized nail color recommendations based on mood, weather, and event.",
-        image: "/moodnailapp.png",
-        skills: ["ElectronJS", "JavaScript", "HTML", "Event Handling"],
-        link: "https://github.com/VictoriaLeliveld/MoodNail",
       },
       {
         title: "UX Team Design Sprint",
@@ -184,25 +197,42 @@ function App() {
               </span>
             ))}
           </div>
-          <a //view project button
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-4 px-4 py-2 bg-[#3C79AF] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
-          >
-            View Project
-          </a> 
-          {project.title === "MoodNail (ElectronJS App)" && (
-            <a //download project button
-              href="https://github.com/VictoriaLeliveld/MoodNail/releases/download/v1.0.0/moodnail.exe"
+          <div className="mt-4 flex gap-4">
+          {/* View project button */}
+          {!project.liveLink && project.title !== "TextSense – AI Accessibility Analysis Tool" && (
+            <a
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 ml-4 px-4 py-2 bg-[#3C79AF] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
+              className="px-4 py-2 bg-[#3C79AF] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
             >
-              Download App
+              View Project
             </a>
           )}
+            {/* TextSense buttons */}
+            {project.title === "TextSense – AI Accessibility Analysis Tool" && (
+              <>
+                <a
+                  href="https://victorialeliveld.github.io/textsense-client/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-[#3C79AF] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/VictoriaLeliveld/textsense-client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-[#3C79AF] text-white font-semibold rounded-lg shadow-md scale-105 hover:scale-110 transition-transform duration-300"
+                >
+                  GitHub Repo
+                </a>
+              </>
+            )}
         </div>
+      </div>
       </div>
     ))}
   </div>
@@ -226,9 +256,33 @@ function App() {
       <h2 className="text-2xl font-bold text-black mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-blue">🛠 Skills</h2>
       <div className="flex flex-wrap gap-3">
         {[
-          'C', 'Java', 'JavaScript', 'HTML', 'LaTeX', 'Python', 'MATLAB',
-          'ARM Assembly', 'CSS', 'TypeScript', 'ElectronJS', 'React', 'SQL', 'Vite',
-          'GitHub', 'Electron', 'Figma', 'Canva', 'VS Code', 'Prototyping', 'UX Principles', 'Raspberry Pi', 'R'
+            'ARM Assembly',
+            'C',
+            'Canva',
+            'CSS',
+            'ElectronJS',
+            'Express.js',
+            'Figma',
+            'Flask',
+            'Git',
+            'GitHub',
+            'HTML',
+            'Java',
+            'JavaScript',
+            'LaTeX',
+            'Node.js',
+            'Python',
+            'R',
+            'Raspberry Pi',
+            'React',
+            'SQL',
+            'TypeScript',
+            'UX Principles',
+            'Vercel',
+            'Vite',
+            'VS Code',
+            'Wireframing',
+            'Prototyping'
         ].map((skill) => (
           <span
             key={skill}
@@ -249,19 +303,19 @@ function App() {
         Honours BSc Computer Science and Psychology
       </p>
       <ul className="list-disc pl-4 text-sm mt-1">
-        <li>Minor in User Experience Design</li>
         <li>Concentration in Computation and Cognitive Neuroscience</li>
+        <li>Minor in User Experience Design</li>
       </ul>
       <p className="mt-2">Wilfrid Laurier University • 2023–2027</p>
       <p className="mt-2 text-black font-medium">Relevant Coursework:</p>
-      <p>Data Structures, Object-Oriented Programming, Intro to Microprocessors, UX Research.</p>
+      <p>Data Structures, Object-Oriented Programming, Database, Operating Systems, Intro to Microprocessors, UX Research, Interaction Design.</p>
     </div>
 
     {/* Contact */}
     <div className="group flex-[1.5] rounded-2xl p-6 bg-white shadow-lg relative transition-transform transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#3C79AF]">
       <h2 className="text-2xl font-bold text-black mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-blue">📬 Contact Me</h2>
       <p className="text-ml">I'd love to connect with you! Feel free to reach out via email or phone, or check out my resume below.</p>
-      <p className="mb-4"></p>
+      <p className="mb-6"></p>
       <p className="mt-2"><strong>Email:</strong> victorialeliveld@gmail.com</p>
       <p className="mb-1"></p>
       <p><strong>Phone:</strong> (519) 249-1179</p>
@@ -270,7 +324,7 @@ function App() {
         href="/VictoriaLeliveldResume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-white text-xl px-2 py-2 rounded flex items-center justify-center transition-transform duration-200 transform hover:scale-110 mt-4 self-start"
+        className="text-white text-xl px-2 py-2 rounded flex items-center justify-center transition-transform duration-200 transform hover:scale-110 mt-10 self-start"
         style={{ backgroundColor: 'var(--blue-main)', minWidth: '100px' }}
         onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--blue-main)')}
         onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--blue-main)')}
