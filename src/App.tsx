@@ -271,6 +271,7 @@ function App() {
             'JavaScript',
             'LaTeX',
             'Node.js',
+            'Prototyping',
             'Python',
             'R',
             'Raspberry Pi',
@@ -281,8 +282,7 @@ function App() {
             'Vercel',
             'Vite',
             'VS Code',
-            'Wireframing',
-            'Prototyping'
+            'Wireframing'
         ].map((skill) => (
           <span
             key={skill}
