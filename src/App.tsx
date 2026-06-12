@@ -37,8 +37,9 @@ function App() {
                   'Psychology Student',
                   'UX Student',
                   'Problem Solver',
+                  'UX Researcher',
                   'Creative Thinker',
-                  'Collaborator'
+                  'Human-Centered Designer'
                 ]}
                 loop={true}
                 cursor
@@ -108,46 +109,53 @@ function App() {
       },
       {
         title: "TextSense – AI Accessibility Analysis Tool",
-        description: "TextSense is a full-stack web application that helps web developers improve web content readability and accessibility. Powered by Google’s Gemini 2.5 Flash AI, it delivers real-time, actionable improvement suggestions through a clean React frontend and a Node.js/Express backend.",
+        description: "TextSense is a full-stack web application that helps web developers improve web content readability and accessibility. Powered by Google’s Gemini 2.5 Flash, it delivers real-time, actionable improvement suggestions through a clean React frontend and a Node.js/Express backend.",
         image: "/TextSensePic.png",
-        skills: ["React.js", "JavaScript", "Node.js", "Express.js"],
+        skills: ["React.js", "Node.js", "LLM Integration"],
         githubLink: "https://github.com/VictoriaLeliveld/textsense-client",
         liveLink: "https://victorialeliveld.github.io/textsense-client/",
       },
       {
-        title: "Applying UX Research Methods: CNN",
-        description: "This term-long UX research project focused on analyzing the CNN website. A collaborative team of UX students applied methods including card sorting, tree testing, wireframing, and usability testing to identify pain points and suggest actionable recommendations for improving user experience.",
-        image: "/CNNPic.png",
-        skills: ["Card Sorting", "Tree Testing", "Wireframing"],
-        link: "https://drive.google.com/file/d/1BzX_enoJclaF1Sz4v5zH9ILumW9SWVeZ/view?usp=sharing",
+        title: "The Failure Museum – UX Hackathon 3rd Place Winner",
+        description: "A 48-hour UX hackathon project developed for UX Laurier’s Designathon, where our team placed 3rd and won a $250 prize. Through user research, we designed The Failure Museum, a social platform that encourages students to share learning struggles and reflect on mistakes to build confidence in independent problem-solving before turning to AI tools.",
+        image: "/TFM.png",
+        skills: ["UX Research", "Figma", "Problem Framing"],
+        link: "https://canva.link/kqfefohaelokojn",
       },
       {
-        title: "Applying UX Research Methods: Spotify",
-        description: "This term-long UX research project focused on analyzing and improving Spotify. A collaborative team of UX students applied methods including heuristic evaluations, SWOT and competitive analyses, user interviews, affinity and empathy mapping, personas, journey mapping, and usability testing.",
+        title: "OneCard Financial Management System",
+        description: "A semester-long software engineering project completed in a team of 10, focused on designing a financial management system for Laurier’s OneCard. The project followed a full software development lifecycle, producing requirements documentation, SPMP, system design artifacts, object-oriented analysis, and user documentation. The proposed system was presented to the class and instructor as a solution for managing balances, transactions, and account services.",
+        image: "/OneCard.png",
+        skills: ["Software Engineering", "Technical Documentation"],
+        link: "https://docs.google.com/presentation/d/1hluouDwwI-lZITE5BHdlNPwOLc8G_CIp/edit?usp=sharing&ouid=105538088896485990253&rtpof=true&sd=true",
+      },
+      {
+        title: "UX Research Case Study: Spotify",
+        description: "This term-long UX research project focused on analyzing and improving Spotify. A collaborative team of UX students applied heuristic evaluations, SWOT and competitive analyses, user interviews, empathy mapping, personas, journey mapping, and usability testing to identify usability issues and propose targeted design improvements.",
         image: "/SpotifyPic.png",
         skills: ["User Interviews", "Usability Testing", "Heuristic Evaluation"],
         link: "https://docs.google.com/presentation/d/1HNKf_MuVQNnDcQTdPBoutBTrcdF6Orsy1l6ThWCMtpA/edit?usp=sharing",
       },
       {
+        title: "UX Research Case Study: CNN",
+        description: "This term-long UX research project focused on evaluating the CNN website. A collaborative team of UX students applied methods including card sorting, tree testing, wireframing, and usability testing to identify pain points and suggest actionable recommendations for improving user experience.",
+        image: "/CNNPic.png",
+        skills: ["Card Sorting", "Tree Testing", "Wireframing"],
+        link: "https://drive.google.com/file/d/1BzX_enoJclaF1Sz4v5zH9ILumW9SWVeZ/view?usp=sharing",
+      },
+      {
         title: "Raspberry Pi Music Player",
-        description: "Pi Music Player is a web app built with Python (Flask), HTML, CSS, and JavaScript, designed to run on a Raspberry Pi 3. This project allowed me to explore the Raspberry Pi environment while creating an interactive and engaging music player that supports playing, pausing, and skipping songs.",
+        description: "Pi Music Player is a web app built with Python (Flask), HTML, CSS, and JavaScript, designed to run on a Raspberry Pi 3. This project combines hardware and web development by turning a Raspberry Pi 3 into an interactive music player that supports playing, pausing, and skipping songs.",
         image: "/RPiMusicPlay.png",
         skills: ["Raspberry Pi", "CSS", "Web App Development"],
         link: "https://github.com/VictoriaLeliveld/pi-music-player",
       },
       {
-        title: "MoodNail – ElectronJS App",
-        description: "MoodNail is a desktop app built with HTML, CSS, and JavaScript, powered by ElectronJS. This project enhanced my skills in JavaScript event handling, responsive UI design, and desktop app development. Download and run the app to experience personalized nail color recommendations based on mood, weather, and event.",
+        title: "MoodNail – Electron App",
+        description: "MoodNail is a desktop app built with HTML, CSS, and JavaScript, powered by Electron. This project enhanced my skills in JavaScript event handling, responsive UI design, and desktop app development. Try out the app to experience personalized nail colour recommendations based on mood, weather, and event.",
         image: "/moodnailapp.png",
-        skills: ["ElectronJS", "JavaScript", "HTML", "Event Handling"],
+        skills: ["Electron", "JavaScript", "HTML", "Event Handling"],
         link: "https://github.com/VictoriaLeliveld/MoodNail",
-      },
-      {
-        title: "Provinces and Territories Confederation Circuit",
-        description: "Provinces and Territories Confederation Circuit is a logic design project that determines the entry order of Canadian provinces and territories into Confederation. It uses binary input and output mappings, simplified using Karnaugh maps and truth tables, and was built and simulated in CircuitVerse for accuracy.",
-        image: "/circuit.png",
-        skills: ["Logic Design", "Circuit Simulation", "Karnaugh Maps"],
-        link: "https://docs.google.com/document/d/1EpSp6lYnRvwA2G_2Mfg_jZfXOudSmiaiqK0N2N4NgvI/edit?usp=sharing",
       },
       {
         title: "Cat Rescue Digital Platform",
@@ -158,16 +166,23 @@ function App() {
       },
       {
         title: "Arduino Marble Maze Labyrinth",
-        description: "This Arduino-Powered Marble Maze is a captivating project that blends both traditional craftsmanship with cutting-edge technology. Through the incorporation of Arduino, this maze not only displays technological design skills but also showcases the potential for innovation in combining hands-on skill with clever use of technology.",
+        description: "This Arduino-powered marble maze uses servo motors and custom circuitry to control the maze’s movement. The project combines mechanical design, electronics, and programming to create an interactive physical computing experience that integrates hardware and software to solve a hands-on engineering challenge.",
         image: "/arduinozoom.png",
         skills: ["Arduino Programming", "Circuit Design", "Breadboarding"],
         link: "https://docs.google.com/document/d/14xFGJrr96g6FuempmKUmvuhyX0bk_qcBbHyBH-vvz5U/edit?usp=sharing",
       },
       {
-        title: "UX Team Design Sprint",
-        description: "This project is a comprehensive term project practicing design thinking principles. It was done in a focused team of UX Design students with diverse perspectives and skill sets to develop an innovative solution to a complex challenge. Explore our project to witness the power of design thinking in action.",
+        title: "Provinces and Territories Confederation Circuit",
+        description: "Provinces and Territories Confederation Circuit is a logic design project that determines the entry order of Canadian provinces and territories into Confederation. It uses binary input and output mappings, simplified using Karnaugh maps and truth tables, and was built and simulated in CircuitVerse for accuracy.",
+        image: "/circuit.png",
+        skills: ["Logic Design", "Circuit Simulation", "Karnaugh Maps"],
+        link: "https://docs.google.com/document/d/1EpSp6lYnRvwA2G_2Mfg_jZfXOudSmiaiqK0N2N4NgvI/edit?usp=sharing",
+      },
+      {
+        title: "Laurier Club Discovery Platform",
+        description: "The Laurier Club Discovery Platform is a UX design sprint project focused on helping first-year students navigate campus life and discover extracurricular opportunities. The team conducted user research and developed personas and journey maps to create an interactive quiz that recommends clubs based on student interests.",
         image: "/UXclubs.png",
-        skills: ["Prototyping", "User Research", "Interaction Design"],
+        skills: ["Prototyping", "UX Research", "Interaction Design"],
         link: "https://docs.google.com/document/d/1LAVLCpv9U_XeAGFyHe-pHTH27RWfuEpT7G9t4SerjgI/edit?usp=sharing",
       }
     ].map((project, idx) => (
@@ -258,17 +273,18 @@ function App() {
         {[
             'ARM Assembly',
             'C',
-            'Canva',
             'CSS',
-            'ElectronJS',
+            'Electron',
             'Express.js',
             'Figma',
             'Flask',
             'Git',
             'GitHub',
+            'Heuristic Evaluation',
             'HTML',
             'Java',
             'JavaScript',
+            'Journey Mapping',
             'LaTeX',
             'Node.js',
             'Prototyping',
@@ -277,12 +293,12 @@ function App() {
             'Raspberry Pi',
             'React',
             'SQL',
+            'Tailwind CSS',
             'TypeScript',
-            'UX Principles',
+            'Usability Testing',
+            'User Research',
             'Vercel',
-            'Vite',
-            'VS Code',
-            'Wireframing'
+            'Vite'
         ].map((skill) => (
           <span
             key={skill}
@@ -303,31 +319,29 @@ function App() {
         Honours BSc Computer Science and Psychology
       </p>
       <ul className="list-disc pl-4 text-sm mt-1">
-        <li>Concentration in Computation and Cognitive Neuroscience</li>
         <li>Minor in User Experience Design</li>
+        <li>Concentration in Computation and Cognitive Neuroscience</li>
       </ul>
-      <p className="mt-2">Wilfrid Laurier University • 2023–2027</p>
+      <p className="mt-2">Wilfrid Laurier University • 2023–2027 • 4.0 GPA</p>
       <p className="mt-2 text-black font-medium">Relevant Coursework:</p>
-      <p>Data Structures, Object-Oriented Programming, Database, Operating Systems, Intro to Microprocessors, UX Research, Interaction Design.</p>
+      <p>Data Structures, Algorithms, Software Engineering, Databases, Operating Systems, UX Research, Interaction Design, Cognitive Neuroscience.</p>
     </div>
 
     {/* Contact */}
     <div className="group flex-[1.5] rounded-2xl p-6 bg-white shadow-lg relative transition-transform transition-shadow duration-300 hover:shadow-[0_0_15px_3px_#3C79AF]">
       <h2 className="text-2xl font-bold text-black mb-2 transition-transform duration-700 group-hover:translate-x-2 hover-shift-blue">📬 Contact Me</h2>
-      <p className="text-ml">I'd love to connect with you! Feel free to reach out via email or phone, or check out my resume below.</p>
-      <p className="mb-6"></p>
-      <p className="mt-2"><strong>Email:</strong> victorialeliveld@gmail.com</p>
-      <p className="mb-1"></p>
-      <p><strong>Phone:</strong> (519) 249-1179</p>
-      <p className="mb-7"></p>
+      <p className="mt-3"></p>
+      <p className="text-ml">I'd love to connect with you! Feel free to reach out via email or check out my resume below.</p>
+      <p className="mt-18">
+        <strong>Email:</strong> victorialeliveld@gmail.com
+      </p>
+
       <a
         href="/VictoriaLeliveldResume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-white text-xl px-2 py-2 rounded flex items-center justify-center transition-transform duration-200 transform hover:scale-110 mt-10 self-start"
+        className="text-white text-xl px-2 py-2 rounded flex items-center justify-center transition-transform duration-200 transform hover:scale-110 mt-5 self-start"
         style={{ backgroundColor: 'var(--blue-main)', minWidth: '100px' }}
-        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--blue-main)')}
-        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--blue-main)')}
       >
         Resume
       </a>
